@@ -6,7 +6,7 @@ class Score(Turtle):
     def __init__(self):
         super().__init__()
         self.score=0
-       with open("file.txt") as data:
+        with open("file.txt") as data:
             self.highscore=int(data.read())
         self.penup()
         self.goto(x=0,y=270)
